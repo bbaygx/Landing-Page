@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Edu+NSW+ACT+Foundation&family=Edu+VIC+WA+NT+Beginner&family=Nunito:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,400;1,300&family=Shadows+Into+Light&family=Source+Sans+Pro&family=Source+Serif+Pro:ital,wght@0,300;1,300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header {
+  width: 100%;
+}
+
+.navbar-item {
+  border-bottom: 1px solid rgb(90, 89, 89);
+  box-shadow: 5px 5px 5px #333;
+  background: #0099ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  /* border-bottom: 1px solid rgb(48, 46, 46); */
+}
+
+.navbar-item .logo img {
+  width: 80%;
+}
+.wrapper-list {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style: none;
+}
+
+.wrapper-list li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Section 2 */
+
+.content-box {
+  padding: 50px 50px;
+  display: grid;
+  grid-template-areas: "sidebar-left sidebar-left sidebar-main sidebar-main";
+}
+
+.sidebar-left {
+  padding-right: 100px;
+  align-items: center;
+  grid-area: sidebar-left;
+}
+
+.sidebar-left h2 {
+  font-size: 50px;
+  font-weight: 900;
+}
+.sidebar-left a {
+  position: absolute;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 15px;
+  color: #fff;
+  background-color: rgb(12, 255, 4);
+}
+.sidebar-left p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.sidebar-main {
+  grid-area: sidebar-main;
+}
